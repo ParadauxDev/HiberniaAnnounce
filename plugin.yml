@@ -1,0 +1,9 @@
+name: HiberniaAnnounce
+main: co.paradaux.HiberniaAnnounce.Announce
+version: 1.0
+author: ParadauxDev
+commands: 
+  announce:
+    usage: /announce message
+    description: Announce a message in chat and via a title.
+    permission: hiberniaannounce.announce

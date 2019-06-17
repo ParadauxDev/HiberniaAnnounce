@@ -1,0 +1,48 @@
+# Notice: This is a quick and dirty plugin to announce both in-game and via a title. This was to help a friend of mine and I decided to make it public as more of an example
+# If this gets sufficient interest I'll actually support it and make it half-decent like my other plugins.
+
+# Placeholders: 
+# - %announcement% -> Content of the announcement.
+# - %message-prefix% -> Chat prefix. Defined below.
+# This does not support PAPI, Again, I'll add support if it's requested
+
+
+placeholders:
+   # This appears when you use the %message-prefix% placeholder 
+   # And it also appears, by default in chat announcements.
+   message-prefix: "&7[&aHibernia&7-&aAnnouncement&7]&r"
+
+messages:
+  
+  # The message that appears when the player doesn't have hiberniaannounce.announce
+  no-permission: "%message-prefix% &4You have insufficient permission."
+
+# Chat Message Announcement settings. 
+broadcast:
+
+  # How the announcement appears.
+  format: "%message-prefix% %announcement%"
+  
+  # Enable Chat Message broadcasts. 
+  # Disable this if you only want title based broadcasts.
+  enabled: true
+  
+title: 
+  title-format: "&4Announcement!"
+  subtitle-format: "%announcement%"
+  
+  # How long the text fades in for
+  fadein: 10
+  
+  # How long the announcement is there for
+  stay: 80
+  
+  # How long the text takes to fade out.
+  fadeout: 10
+  
+  # Enable title broadcasts. 
+  # Disable this if you only want chat based broadcasts.
+  enabled: true
+  
+# Do not mess with this unless you know what you're doing.
+config-version: 1.0
