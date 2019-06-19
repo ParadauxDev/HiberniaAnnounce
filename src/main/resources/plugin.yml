@@ -2,6 +2,7 @@ name: HiberniaAnnounce
 main: co.paradaux.HiberniaAnnounce.Announce
 version: 1.0
 author: ParadauxDev
+softdepend: [PlaceholderAPI, HiberniaDiscord]
 commands: 
   announce:
     usage: /announce message
